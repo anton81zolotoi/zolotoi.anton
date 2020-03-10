@@ -1,0 +1,78 @@
+.hero
+    position: relative
+    background: $dark url('../img/hero-bg.jpg') no-repeat center / cover 
+    height: 100vh 
+    color: $light
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba($dark, 0.7)
+    &__content
+        position: relative
+        max-width: 670px
+    &__text
+       font-size: 22px
+       max-width: 504px 
+    &__button
+        margin-right: 20px   
+    &__instagram
+        position: absolute 
+        left: 0
+        top: 0
+        max-width: 91px
+        height: 100%
+    &__scroll-down
+        position: absolute 
+        display: flex
+        align-items: center
+        justify-content: center
+        left: 0
+        bottom: 0 
+        min-width: 247px
+        min-height: 97px  
+        background-color: $dark 
+        text-transform: uppercase
+        text-decoration: none
+        color: $light
+        &::after
+            content: ''
+            background: url('../img/down.svg') no-repeat center
+            width: 29px
+            height: 29px
+            border: 1.5px solid $primary
+            border-radius: 50%
+            margin-left: 12px
+
+      
+.instagram
+    background-color: $dark
+    display: flex
+    justify-content: center
+    align-items: center
+    &__link
+        display: flex
+        align-items: center
+        line-height: 0.8
+        text-transform: uppercase
+        text-decoration: none
+        transform: rotate(90deg) 
+        color: $primary
+        &::after
+            content: ''
+            width: 51px
+            height: 1px
+            background-color: $primary
+            margin-left: 8px
+.title
+    margin: 0  
+    font-family: 'Yeseva One', cursive
+    text-transform: uppercase  
+    font-size: 40px
+    &--praimary
+        color: $primary
